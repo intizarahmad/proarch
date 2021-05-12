@@ -12,7 +12,7 @@
 .td{
     display:table-cell;
     vertical-align:top;
-    background-color: rgb(129, 125, 125);
+    background-color: #666666;
     padding:5px 10px;
     font-weight: 700;
     text-align: left;
