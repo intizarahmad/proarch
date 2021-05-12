@@ -8,7 +8,7 @@ const TableHeader = ({tableInfoData})=> (
     { 
        tableInfoData && 
        tableInfoData.map((header)=> {
-            return <div key={header.headName} className="td">{header.headName}</div>
+            return <div key={header.headName} className="th">{header.headName}</div>
         })
     }
     </div>
@@ -33,7 +33,7 @@ const TableRow = ({rowData, tableInfoData})=> {
         { 
         tableInfoData && 
         tableInfoData.map((body)=> {
-                return <div key={body.fieldName} className="tc">{rowData[body.fieldName]}</div>
+                return <div key={body.fieldName} className="td">{rowData[body.fieldName]}</div>
             })
         }
         </div>
