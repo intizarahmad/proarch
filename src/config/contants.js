@@ -1,12 +1,3 @@
-const TABLE_HEADERS = [
-    "Company Name",
-    'currency_code',
-    "Currency",
-    "Department",
-    "Sales Total",
-    "City"
-]
-
 const COMPANY_TABLE = [
     { headName: 'Company Name', fieldName: 'company_name' },
     { headName: 'Currency', fieldName: 'currency' },
@@ -17,6 +8,5 @@ const COMPANY_TABLE = [
 ]
 
 export {
-    TABLE_HEADERS,
     COMPANY_TABLE
 }

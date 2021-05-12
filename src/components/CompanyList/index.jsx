@@ -4,7 +4,7 @@ import Box from './../common/Box'
 import InputText from './../common/InputText'
 import Table from './../common/Table'
 import Loader from './../common/Loader'
-import { TABLE_HEADERS , COMPANY_TABLE} from '../../config/contants'
+import { COMPANY_TABLE } from '../../config/contants'
 import { getCompanyData } from '../../helpers/company'
 
 const Index = (props)=> {
@@ -40,7 +40,6 @@ const Index = (props)=> {
     }
    
     return (
-        <div>
             <Box >
                 <h3 className="heading">Company Data</h3>
                 <InputText 
@@ -51,19 +50,15 @@ const Index = (props)=> {
                 />
                 {isLoading && <Loader />} 
                 {
-                (tableData.length === 0 && !isLoading) ? 
-                <div className="no-data">No data Found.</div>    
-                :
-                <Table 
-                    tableInfoData = { COMPANY_TABLE } 
-                    tableData  = { tableData }
-                />
-                
-            }
-                
-            </Box>
-
-        </div>
+                    (tableData.length === 0 && !isLoading) ? 
+                    <div className="no-data">No data Found.</div>    
+                    :
+                    <Table 
+                        tableInfoData = { COMPANY_TABLE } 
+                        tableData  = { tableData }
+                    />
+                }
+            </Box> 
     )
 }
 
