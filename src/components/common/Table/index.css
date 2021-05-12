@@ -1,0 +1,25 @@
+.div-table {
+	display: table;
+	width: 100%;
+	background-color: #eee;
+	border: 1px solid #666666;
+	border-spacing: 1px;
+    margin-top: 10px;
+}
+.tr {
+    display: table-row;
+}
+.td{
+    display:table-cell;
+    vertical-align:top;
+    background-color: rgb(129, 125, 125);
+    padding:5px 10px;
+    font-weight: 700;
+    text-align: left;
+}
+.tc {
+    display:table-cell;
+    text-align: left;
+    background-color: lightgray;
+    padding:5px 10px; 
+}
