@@ -42,12 +42,14 @@ const Index = (props)=> {
     return (
             <Box >
                 <h3 className="heading">Company Data</h3>
+                <div className="search-box">
                 <InputText 
                     placeholder="Please enter company name to search" 
                     onChange = {onChange}
                     value={searchText}
                     name = "search"  
                 />
+                </div>
                 {isLoading && <Loader />} 
                 {
                     (tableData.length === 0 && !isLoading) ? 
